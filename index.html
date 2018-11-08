@@ -1,0 +1,267 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        ol li {
+            margin-bottom: 25px;
+        }
+
+        ol.main {
+            padding-bottom: 100px;
+            border-bottom: 3px dashed black;
+        }
+
+        ol.main {
+            list-style: none;
+            counter-reset: li;
+        }
+
+        ol.main > li {
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+            counter-increment: li;
+            font-size: 20px;
+        }
+
+        ol.main > li::before {
+            content: counter(li);
+            color: black;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            font-size: 30px;
+        }
+
+        ol.main > li:last-child {
+            padding-bottom: 0px;
+            border-bottom: none;
+        }
+
+        ol li span {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: 50px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        ol li img {
+            margin-left: 50px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Youtube</h1>
+        <ol class="main">
+            <li>
+                <a href="https://console.developers.google.com/">https://console.developers.google.com/</a>
+                adresine gidilecek.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-1.JPG" />
+            </li>
+            <li>
+                Hesap bilgileri girilerek giriş yapılacak.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-2.JPG" />
+            </li>
+            <li>
+                Bu sayfada "Proje Oluştur" tuşuna basılacak.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-3.JPG" />
+            </li>
+            <li>
+                Bu sayfada proje adı girildikten sonra, "Oluştur" tuşuna basılarak proje oluşturulacak.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-4.JPG" />
+            </li>
+            <li>
+                Bu sayfada "API'LERİ VE HİZMETLERİ ETKİNLEŞTİR" tuşuna basılacak.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-5.JPG" />
+            </li>
+            <li>
+                Açılan sayfadaki arama çubuğuna "youtube data api v3" yazılacak.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-6.JPG" />
+            </li>
+            <li>
+                Aşağıda gelen kutucuk (Youtube Data API V3) tıklanacak.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-7.JPG" />
+            </li>
+            <li>
+                Bu sayfada "Etkinleştir" tuşuna basılarak, Youtube Data API V3 kullanımı onaylanacak.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-8.JPG" />
+            </li>
+            <li>
+                Bu sayfada "Kimlik Bilgileri Oluştur" tuşuna basılacak.
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-9.JPG" />
+            </li>
+            <li>
+                Bu sayfadaki alanlar şöyle doldurulacak:
+                <ol>
+                    <li>Youtube Data API V3 seçilecek.</li>
+                    <li>Web sunucusu (örneğin node.js, Tomcat) seçilecek.</li>
+                    <li>Herkese açık veriler seçilecek.</li>
+                    <li>"Hangi kimlik bilgilerine ihtiyacım var?" tuşuna basılacak.</li> <!-- WHAT -->
+                </ol>
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-10.JPG" />
+            </li>
+            <li>
+                <h1 style="color: red;">ÖNEMLİ</h1>
+                Bu sayfada
+                <ol>
+                    <li>İşte API anahtarınız sekmesinde verdiği anahtar saklanacak.</li>
+                    <li>Bitti tuşuna basılacak.</li>
+                </ol>
+
+                <span>Açılan sayfa</span>
+                <img src="youtube-10.JPG" />
+            </li>
+        </ol>
+
+        <h1>Twitter</h1>
+        <ol class="main">
+            <li>
+                <a href="https://twitter.com/login?redirect_after_login=https:/developer.twitter.com/">https://twitter.com/login?redirect_after_login=https:/developer.twitter.com/</a>
+                adresine gidilecek.
+
+                <span>Açılan sayfa</span>
+                <img src="twitter-1.JPG" />
+            </li>
+            <li>
+                Hesap bilgileri girilecek.
+                Hesaba girildikten sonra, <a href="https://developer.twitter.com/en/apply/user">https://developer.twitter.com/en/apply/user</a>
+                adresine gidilecek.
+
+                <span>Açılan sayfa</span>
+                <img src="twitter-2.JPG" />
+            </li>
+            <li>
+                "Continue" tuşuna basılacak.
+
+                <span>Açılan sayfa</span>
+                <img src="twitter-3.JPG" />
+            </li>
+            <li>
+                "I am requesting access for my organization" seçeneği seçildikten sonra gerekli bilgiler doldurulacak.
+                <ol>
+                    <li>Bu formdaki tüm adımların tamamlanmasının ardından Twitter tarafından bir doğrulama e-postası
+                        gelecek. Bu e-posta'daki doğrulama linkine tıklanacak.</li>
+                    <li>Twitter bir süre talebi inceledikten sonra (yaklaşık bir gün), bir onay e-postası gönderecek.</li>
+                    <li>Bu e-posta geldikten sonra, <a href="https://developer.twitter.com/en/apps/create">https://developer.twitter.com/en/apps/create</a>
+                        adresine gidilecek.</li>
+                </ol>
+
+                <span>Açılan sayfa</span>
+                <img src="twitter-4.JPG" />
+            </li>
+            <li>
+                Açılan sayfadaki bilgiler doldurulacak:
+                <ol>
+                    <li>App name, uygulamanın adını belirtecek. Örn. Eczacıbaşı Web Sayfası olabilir.</li>
+                    <li>Web site url, https://www.eczacibasi.com.tr olacak</li>
+                </ol>
+
+                <span>Açılan sayfa</span>
+                <img src="twitter-5.JPG" />
+            </li>
+            <li>
+                <h1 style="color: red;">ÖNEMLİ</h1>
+                Açılan sayfada, öncelikle üstteki tablardan "Keys and tokens"'a geçilecek.
+                <p>
+                    Bu sekmedeki Consumer API Keys başlığının altındaki bilgileri saklayınız.
+                </p>
+            </li>
+        </ol>
+
+        <h1>Instagram</h1>
+        <ol class="main">
+            <h3 style="color: red;">
+                Instagram API bağlantısı için hesap oluşturma sayfası arızalıdır.
+            </h3>
+            <li>
+                <a href="https://www.instagram.com/accounts/login/?next=/developer/register/">https://www.instagram.com/accounts/login/?next=/developer/register/</a>
+                adresine gidilecek.
+            </li>
+            <li>
+                Hesap bilgileri girilerek giriş yapılacak.
+
+                <span>Açılan sayfa</span>
+                <img src="instagram-1.JPG" />
+            </li>
+            <li>
+                Sayfada istenen alanlar doldurulacak.
+
+                <span>Açılan sayfa</span>
+                <img src="instagram-2.JPG" />
+            </li>
+            <li>
+                Bu sayfada "Register Your Application" tuşuna basılarak, uygulama kaydetme sayfasına gidilecek.
+
+                <span>Açılan sayfa</span>
+                <img src="instagram-3.JPG" />
+            </li>
+            <li>
+                Bu sayfada "Register a New Client" tuşuna basılarak, yeni bir hesap api hesabı oluşturma sayfasına
+                gidilecek.
+            </li>
+            <li>
+                Bu sayfadaki bilgiler doldurulduktan ve hesap oluşturulduktan sonra <a href="https://www.instagram.com/developer/clients/manage/">https://www.instagram.com/developer/clients/manage/</a>
+                sayfasına gidilecek.
+
+                <span>Açılan sayfa</span>
+                <img src="instagram-4.JPG" />
+            </li>
+            <li>
+                Bu sayfadaki "MANAGE" tuşuna basılacak.
+
+                <span>Açılan sayfa</span>
+                <img src="instagram-5.JPG" />
+            </li>
+            <li>
+                <h1 style="color: red;">ÖNEMLİ</h1>
+                Bu sayfada yer alan "Client ID" ve "Client Secret" saklanacak.
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
